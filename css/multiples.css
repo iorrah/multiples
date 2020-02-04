@@ -10,10 +10,9 @@ body {
   letter-spacing: 0.0625em;
 }
 
-header,
-section,
-footer {
-  min-width: 1370px;
+.header {
+  padding: 5rem 0 0;
+  margin-bottom: 2rem;
 }
 
 h1 {
