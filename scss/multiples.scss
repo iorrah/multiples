@@ -1,0 +1,36 @@
+@import "variables.scss";
+
+body {
+  font-family: $font;
+  color: $black;
+  letter-spacing: 0.0625em;
+}
+
+header,
+section,
+footer {
+  min-width: 1370px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 550;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+a {
+  color: $primary;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: darken($primary, 20%);
+  }
+}
