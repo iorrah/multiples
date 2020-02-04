@@ -2,8 +2,9 @@
   "use strict"; // Start of use strict
 
   var print = function(content) {
-    document.write(content);
-    document.write("<br />");
+    var paragraph = document.createElement("p");
+    paragraph.innerHTML = content;
+    document.getElementById("main").appendChild(paragraph);
   };
 
   var engine = function() {
