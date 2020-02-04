@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Banking</title>
+  <script type="text/javascript">
+    // x3 = online
+    // x5 banking
+    // x3 x5 = online banking
+
+    const print = (content) => {
+      document.write(content);
+      document.write("<br />");
+    };
+
+    const engine = () => {
+      let content = "";
+      
+      for (let i = 1; i <= 100; i++) {
+        if ((i % 3 === 0) && (i % 5 === 0)) {
+          content = " - online banking";
+        } else if (i % 3 === 0) {
+          content = " - online";
+        } else if (i % 5 === 0) {
+          content = " - banking";
+        }
+
+        print(i + content);
+      }
+    };
+
+    engine();
+  </script>
+</head>
+<body>
+
+</body>
+</html>
