@@ -39,7 +39,3 @@ Here are some places where you can find me:
 * [GitHub](https://github.com/iorrah)
 * [Dribbble](https://dribbble.com/iorrah)
 * [Flickr](https://www.flickr.com/photos/iorrah)
-
-## Copyright and License
-
-Copyright © Iorrah Mota 2019 - All Rights Reserved
