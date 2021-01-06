@@ -13,8 +13,14 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 
+// Deploying To GitHub Pages With Gulp
+// https://medium.com/superhighfives/deploying-to-github-pages-with-gulp-c06efc527de8
+
 // Load package.json for banner
 const pkg = require('./package.json');
+
+// Commonly used variables
+const publishingFolder = "docs";
 
 // Set the banner content
 const banner = ['/*!\n',
@@ -123,12 +129,12 @@ function watchFiles() {
 // Create an optimized build inside /public
 function publishStructure() {
   return gulp.src(['./*.html', './js/**/*.min.js', './css/**/*.min.css'], { base: '.' })
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('docs'));
 }
 
 function publishImages() {
   return gulp.src(['img/**/*.{svg,png,jpg,gif,json,ico}'], { base: '.' })
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('docs'));
 }
 
 function publishVendors() {
@@ -142,7 +148,7 @@ function publishVendors() {
       './vendor/jquery-easing/jquery.easing.min.js'
     ], 
     { base: '.' }
-  ).pipe(gulp.dest('public'));
+  ).pipe(gulp.dest('docs'));
 }
 
 // Define complex tasks
